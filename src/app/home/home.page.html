@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      TmkCoder
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,26 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+
+<!-- Textarea in an item with a placeholder -->
+<ion-item>
+  <ion-textarea placeholder="Enter more information here..."
+    rows=20 name="mensaje" [(ngModel)]="mensaje">
+  </ion-textarea>
+</ion-item>
+
+<ion-item>
+  
+  <ion-buttons slot="start">
+    <ion-button (click)="onClick()" expand="block" color="primary">
+      Code
+    </ion-button>
+    <ion-button (click)="decode()" expand="block" color="danger">
+      decode
+    </ion-button>
+  </ion-buttons>
+</ion-item>
+</div>
+
 </ion-content>
